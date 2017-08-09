@@ -8,6 +8,12 @@ int main() {
     begin = clock();
 
     cout << "Comenzando a medir Tiempo\n" << endl;
+
+    int array[100024];
+
+    for (int i = 0; i < 100024; ++i)
+        array[i] = i;
+
     clock_t end = clock();
 
     double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
