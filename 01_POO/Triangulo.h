@@ -8,7 +8,13 @@ class Triangulo : public Geometria {
 private:
     float angulos;
 public:
-    Triangulo ();
+    void setAngulos(int);
+
+    float getAngulos();
+
+    float getSuperficie();
+
+    float getPerimetro();
 };
 
 
